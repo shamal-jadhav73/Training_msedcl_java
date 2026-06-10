@@ -1,0 +1,43 @@
+2026-06-10T09:21:10.300+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 11252 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T09:21:10.308+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T09:21:10.450+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:10.452+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:10.456+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:10.456+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:10.469+05:30  INFO 11252 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T09:21:10.469+05:30  INFO 11252 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T09:21:11.529+05:30  INFO 11252 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T09:21:11.583+05:30  INFO 11252 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2026-06-10T09:21:11.827+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3048f94a-8ec7-351b-afc7-5cb1628238ce
+2026-06-10T09:21:12.407+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T09:21:12.423+05:30  INFO 11252 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T09:21:12.424+05:30  INFO 11252 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T09:21:12.482+05:30  INFO 11252 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2012 ms
+2026-06-10T09:21:12.733+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T09:21:13.129+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55a51b20
+2026-06-10T09:21:13.132+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T09:21:13.166+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T09:21:13.231+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T09:21:13.775+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T09:21:13.895+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T09:21:14.731+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T09:21:14.740+05:30  INFO 11252 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T09:21:14.836+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T09:21:15.142+05:30  WARN 11252 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T09:21:15.768+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-06-10T09:21:15.884+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T09:21:15.902+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 8.286 seconds (process running for 9.254)
+2026-06-10T09:21:16.087+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T09:21:16.088+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T09:21:16.090+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
