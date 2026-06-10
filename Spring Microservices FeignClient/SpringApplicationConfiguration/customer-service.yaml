@@ -1,0 +1,35 @@
+spring:
+    application:
+        name: "customer-service"
+    datasource:
+        username: root
+        password: root123
+        url: jdbc:mysql://localhost:3306/customer_db
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    profiles:
+      active:
+      - "uat"
+springdoc:
+    api-docs:
+        enabled: false
+logging:
+    file:
+        name: logs/customers.log
+#Custom Properties-used in application
+build:
+    version: "2.0"
+Customer:
+    message: "Welcome to Msedcl bank Customer related REST API"
+    contactDetails: 
+      name: "Poonam"
+      email: "poonal@msedcl.in"
+    onCallSupport:
+        - 1234568789
+        - 9876543210
+
+#spring.datasource.username=root
+#spring.datasource.password=root123
+#spring.datasource.url=jdbc:mysql://localhost:3306/customer_db
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+#logging.file.name=logs/customers.log
