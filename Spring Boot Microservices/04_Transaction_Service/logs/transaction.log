@@ -1,0 +1,43 @@
+2026-06-10T09:21:39.404+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] c.msedcl.main.transaction.Application    : Starting Application using Java 25.0.1 with PID 14284 (C:\Training\Spring Boot Microservices\04_Transaction_Service\target\classes started by student16 in C:\Training\Spring Boot Microservices\04_Transaction_Service)
+2026-06-10T09:21:39.412+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] c.msedcl.main.transaction.Application    : The following 1 profile is active: "uat"
+2026-06-10T09:21:39.558+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:39.561+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=transaction-service, profiles=[default], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:39.562+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:39.562+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=transaction-service, profiles=[uat], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:39.565+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T09:21:39.566+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T09:21:40.530+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T09:21:40.586+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2026-06-10T09:21:40.881+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=adb8d0ce-8da8-3af2-8be5-ffca166930df
+2026-06-10T09:21:41.452+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8282 (http)
+2026-06-10T09:21:41.467+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T09:21:41.468+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T09:21:41.520+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1952 ms
+2026-06-10T09:21:41.769+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T09:21:42.154+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@277d0a62
+2026-06-10T09:21:42.156+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T09:21:42.192+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T09:21:42.249+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T09:21:42.790+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T09:21:42.901+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transactions_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: transactions_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T09:21:43.771+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T09:21:43.781+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T09:21:43.876+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T09:21:44.150+05:30  WARN 14284 --- [04_Transaction_Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T09:21:44.730+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-06-10T09:21:44.842+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8282 (http) with context path '/'
+2026-06-10T09:21:44.859+05:30  INFO 14284 --- [04_Transaction_Service] [restartedMain] c.msedcl.main.transaction.Application    : Started Application in 8.009 seconds (process running for 9.004)
+2026-06-10T09:21:45.426+05:30  INFO 14284 --- [04_Transaction_Service] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T09:21:45.426+05:30  INFO 14284 --- [04_Transaction_Service] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T09:21:45.429+05:30  INFO 14284 --- [04_Transaction_Service] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
