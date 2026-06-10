@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.msedcl.main</groupId>
+  <artifactId>05_StringUtil</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <name>05_StringUtil</name>
+  <description>Simple Maven Project</description>
+</project>
