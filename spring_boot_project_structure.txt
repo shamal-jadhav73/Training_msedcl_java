@@ -1,0 +1,28 @@
+
+package and classes
+
+audit -      AuditAwareImpl
+
+entity -     BaseEntity, Account
+
+DTO -        AccountRequestDTO
+             AccountResponseDTO
+             BalanceUpdateRequestDTO
+             CustomerResponseDTO
+
+mapper -     AccountMapper
+
+repository - AccountRepository
+
+exception -  AcountNotFoundException
+             InsufficientBalanceException
+             GlobalExceptionHandler
+
+service   - AccountService
+            AccountServiceImpl
+           
+common    - APIResponse
+
+controller - AccountController
+
+client  -    CustomerRestClient
