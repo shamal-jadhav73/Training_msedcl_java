@@ -1,0 +1,870 @@
+2026-06-10T09:21:10.300+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 11252 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T09:21:10.308+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T09:21:10.450+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:10.452+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:10.456+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T09:21:10.456+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=57f190a7a7c06e11f22b955f1c2504d0c4493b0e, state=
+2026-06-10T09:21:10.469+05:30  INFO 11252 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T09:21:10.469+05:30  INFO 11252 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T09:21:11.529+05:30  INFO 11252 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T09:21:11.583+05:30  INFO 11252 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2026-06-10T09:21:11.827+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3048f94a-8ec7-351b-afc7-5cb1628238ce
+2026-06-10T09:21:12.407+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T09:21:12.423+05:30  INFO 11252 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T09:21:12.424+05:30  INFO 11252 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T09:21:12.482+05:30  INFO 11252 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2012 ms
+2026-06-10T09:21:12.733+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T09:21:13.129+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55a51b20
+2026-06-10T09:21:13.132+05:30  INFO 11252 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T09:21:13.166+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T09:21:13.231+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T09:21:13.775+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T09:21:13.895+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T09:21:14.731+05:30  INFO 11252 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T09:21:14.740+05:30  INFO 11252 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T09:21:14.836+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T09:21:15.142+05:30  WARN 11252 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T09:21:15.768+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-06-10T09:21:15.884+05:30  INFO 11252 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T09:21:15.902+05:30  INFO 11252 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 8.286 seconds (process running for 9.254)
+2026-06-10T09:21:16.087+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T09:21:16.088+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T09:21:16.090+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-10T10:17:29.678+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive all customer details
+2026-06-10T10:17:29.902+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : All Customers retrived successfully
+2026-06-10T10:17:29.904+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T10:17:29.904+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=3, name=Seema, email=seema@gmail.com, mobileNumber=0987654321)
+2026-06-10T10:17:29.904+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=5, name=Shriyan Sutar, email=shriyansutar@gmail.com, mobileNumber=9898565620)
+2026-06-10T10:17:29.905+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=6, name=Test, email=test@test.com, mobileNumber=1325467890)
+2026-06-10T10:17:29.905+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=7, name=Seema, email=seema@gmail.com, mobileNumber=7857584520)
+2026-06-10T10:17:29.905+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=8, name=shamal, email=sss@gmail.com, mobileNumber=9998886660)
+2026-06-10T10:17:29.905+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=9, name=Test, email=testt@gmail.com, mobileNumber=1356789066)
+2026-06-10T10:17:38.986+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T10:17:38.986+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerId :: 9
+2026-06-10T10:17:39.005+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T10:17:39.005+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=9, name=Test, email=testt@gmail.com, mobileNumber=1356789066)
+2026-06-10T10:17:49.823+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T10:17:49.823+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T10:17:49.828+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T10:17:49.828+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T10:17:57.871+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T10:17:57.872+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T10:17:57.876+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T10:17:57.876+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T10:18:42.118+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-7] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T10:18:42.118+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-7] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T10:18:42.124+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-7] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T10:18:42.125+05:30  INFO 11252 --- [customer-service] [http-nio-8080-exec-7] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T10:18:50.331+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(69)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-10T10:18:50.337+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(69)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T10:18:50.344+05:30  INFO 11252 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T10:18:50.354+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(69)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T10:18:50.359+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-10T10:18:50.370+05:30  INFO 11252 --- [customer-service] [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-10T11:42:38.784+05:30  INFO 8400 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 8400 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T11:42:38.787+05:30  INFO 8400 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T11:42:38.856+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T11:42:38.857+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=86db0bf880be614b10cf5df28366e3f780e8e79a, state=
+2026-06-10T11:42:38.858+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T11:42:38.858+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=86db0bf880be614b10cf5df28366e3f780e8e79a, state=
+2026-06-10T11:42:38.860+05:30  INFO 8400 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T11:42:38.861+05:30  INFO 8400 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T11:42:39.948+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T11:42:40.109+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2026-06-10T11:42:40.427+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T11:42:41.022+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T11:42:41.038+05:30  INFO 8400 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T11:42:41.038+05:30  INFO 8400 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T11:42:41.103+05:30  INFO 8400 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2241 ms
+2026-06-10T11:42:41.458+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T11:42:41.841+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71d881f0
+2026-06-10T11:42:41.844+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T11:42:41.877+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T11:42:41.938+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T11:42:42.486+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T11:42:42.598+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T11:42:43.449+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T11:42:43.459+05:30  INFO 8400 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T11:42:43.570+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T11:42:43.808+05:30  WARN 8400 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T11:42:44.501+05:30  INFO 8400 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T11:42:44.547+05:30  WARN 8400 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T11:42:44.561+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T11:42:44.683+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T11:42:44.712+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T11:42:44.717+05:30  INFO 8400 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T11:42:44.728+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T11:42:44.729+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T11:42:44.729+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T11:42:44.729+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T11:42:44.729+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T11:42:44.729+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T11:42:44.730+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T11:42:45.163+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T11:42:45.164+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T11:42:45.167+05:30  INFO 8400 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T11:42:45.169+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781071965169 with initial instances count: 0
+2026-06-10T11:42:45.174+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T11:42:45.175+05:30  INFO 8400 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781071965175, current=UP, previous=STARTING]
+2026-06-10T11:42:45.177+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T11:42:45.199+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T11:42:45.200+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T11:42:45.218+05:30  INFO 8400 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 9.546 seconds (process running for 10.972)
+2026-06-10T11:42:45.296+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T11:42:45.544+05:30  INFO 8400 --- [customer-service] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T11:42:45.544+05:30  INFO 8400 --- [customer-service] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T11:42:45.546+05:30  INFO 8400 --- [customer-service] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-10T11:43:15.166+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T11:43:15.168+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T11:43:15.168+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T11:43:15.168+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T11:43:15.168+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T11:43:15.169+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-10T11:43:15.169+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T11:43:15.194+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T11:47:44.733+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T11:52:44.735+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T11:57:21.652+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive all customer details
+2026-06-10T11:57:21.948+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : All Customers retrived successfully
+2026-06-10T11:57:21.950+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=3, name=Seema, email=seema@gmail.com, mobileNumber=0987654321)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=5, name=Shriyan Sutar, email=shriyansutar@gmail.com, mobileNumber=9898565620)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=6, name=Test, email=test@test.com, mobileNumber=1325467890)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=7, name=Seema, email=seema@gmail.com, mobileNumber=7857584520)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=8, name=shamal, email=sss@gmail.com, mobileNumber=9998886660)
+2026-06-10T11:57:21.951+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=9, name=Test, email=testt@gmail.com, mobileNumber=1356789066)
+2026-06-10T11:57:44.737+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T11:57:45.607+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T11:57:45.607+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T11:57:45.623+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T11:57:45.624+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T11:57:52.627+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T11:57:52.627+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T11:57:52.633+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T11:57:52.633+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T11:58:20.520+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-6] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T11:58:20.520+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-6] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T11:58:20.525+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-6] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T11:58:20.525+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-6] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:02:44.739+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:03:02.165+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-9] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:03:02.165+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-9] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:03:02.170+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-9] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:03:02.170+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-9] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:03:07.942+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:03:07.942+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:03:07.948+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:03:07.948+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:03:19.672+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:03:19.672+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:03:19.677+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:03:19.678+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:03:26.969+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:03:26.970+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:03:26.975+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:03:26.975+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:03:31.666+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:03:31.667+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:03:31.672+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:03:31.672+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:05:40.184+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:05:40.184+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:05:40.189+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:05:40.189+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:07:44.741+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:08:33.867+05:30  WARN 8400 --- [customer-service] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-06-10T12:12:07.280+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:12:07.281+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:12:07.285+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:12:07.286+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-10] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:12:44.742+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:17:44.744+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:22:44.745+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:27:44.748+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:32:44.750+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:37:44.752+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:38:27.404+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T12:38:27.404+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T12:38:27.409+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T12:38:27.409+05:30  INFO 8400 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T12:42:44.754+05:30  INFO 8400 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:47:01.459+05:30  INFO 8400 --- [customer-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (0 additions, 15 deletions, 4 modifications)
+2026-06-10T12:47:01.463+05:30  INFO 8400 --- [customer-service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T12:47:01.464+05:30  INFO 8400 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781075821464, current=DOWN, previous=UP]
+2026-06-10T12:47:01.464+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T12:47:01.470+05:30  INFO 8400 --- [customer-service] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T12:47:01.476+05:30  INFO 8400 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T12:47:01.477+05:30  INFO 8400 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T12:47:01.489+05:30  INFO 8400 --- [customer-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:47:01.494+05:30  INFO 8400 --- [customer-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-10T12:47:01.499+05:30  INFO 8400 --- [customer-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-10T12:47:01.500+05:30  INFO 8400 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T12:47:04.502+05:30  INFO 8400 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T12:47:04.510+05:30  INFO 8400 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T12:47:04.511+05:30  INFO 8400 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T12:47:05.896+05:30  INFO 8400 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 8400 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T12:47:05.897+05:30  INFO 8400 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T12:47:05.900+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:47:05.900+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:47:05.900+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:47:05.900+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:47:06.344+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T12:47:06.348+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-06-10T12:47:06.537+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=32345c20-66ae-307e-892c-736f7ae74d69
+2026-06-10T12:47:06.656+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T12:47:06.659+05:30  INFO 8400 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T12:47:06.660+05:30  INFO 8400 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T12:47:06.700+05:30  INFO 8400 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 799 ms
+2026-06-10T12:47:06.827+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-10T12:47:06.847+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46d2c59a
+2026-06-10T12:47:06.848+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-10T12:47:06.850+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T12:47:06.912+05:30  INFO 8400 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T12:47:06.916+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T12:47:06.948+05:30  INFO 8400 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T12:47:06.950+05:30  INFO 8400 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:47:06.994+05:30  WARN 8400 --- [customer-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot create inner bean '(inner bean)#22c354e8' of type [org.springframework.aop.framework.ProxyFactoryBean] while setting bean property 'auditorAware'
+2026-06-10T12:47:06.994+05:30  INFO 8400 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:47:06.995+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-10T12:47:07.007+05:30  INFO 8400 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-10T12:47:07.008+05:30  INFO 8400 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-10T12:47:07.015+05:30  INFO 8400 --- [customer-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-10T12:47:07.034+05:30 ERROR 8400 --- [customer-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'auditAwareImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'auditAwareImpl' in your configuration.
+
+2026-06-10T12:50:38.699+05:30  INFO 6972 --- [customer-service] [main] c.msedcl.main.customer.ApplicationTests  : Starting ApplicationTests using Java 25.0.1 with PID 6972 (started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T12:50:38.701+05:30  INFO 6972 --- [customer-service] [main] c.msedcl.main.customer.ApplicationTests  : The following 1 profile is active: "uat"
+2026-06-10T12:50:38.771+05:30  INFO 6972 --- [customer-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:50:38.772+05:30  INFO 6972 --- [customer-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:50:38.773+05:30  INFO 6972 --- [customer-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:50:38.776+05:30  INFO 6972 --- [customer-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:50:40.300+05:30  INFO 6972 --- [customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T12:50:40.491+05:30  INFO 6972 --- [customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 1 JPA repository interface.
+2026-06-10T12:50:40.904+05:30  INFO 6972 --- [customer-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6f6f4a48-5362-36db-8202-f0ad7cbfb245
+2026-06-10T12:50:41.395+05:30  INFO 6972 --- [customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T12:50:41.811+05:30  INFO 6972 --- [customer-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e9ed4df
+2026-06-10T12:50:41.813+05:30  INFO 6972 --- [customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T12:50:41.852+05:30  INFO 6972 --- [customer-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T12:50:41.924+05:30  INFO 6972 --- [customer-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T12:50:42.622+05:30  INFO 6972 --- [customer-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T12:50:42.747+05:30  INFO 6972 --- [customer-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T12:50:43.697+05:30  INFO 6972 --- [customer-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T12:50:43.725+05:30  INFO 6972 --- [customer-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:50:43.828+05:30  INFO 6972 --- [customer-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T12:50:44.236+05:30  WARN 6972 --- [customer-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T12:50:45.375+05:30  INFO 6972 --- [customer-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T12:50:45.428+05:30  WARN 6972 --- [customer-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T12:50:45.440+05:30  INFO 6972 --- [customer-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T12:50:45.544+05:30  INFO 6972 --- [customer-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T12:50:45.577+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T12:50:45.582+05:30  INFO 6972 --- [customer-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:50:45.593+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T12:50:45.593+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T12:50:45.593+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T12:50:45.593+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T12:50:45.593+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T12:50:45.594+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T12:50:45.594+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T12:50:45.933+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T12:50:45.935+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T12:50:45.937+05:30  INFO 6972 --- [customer-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T12:50:45.938+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781076045938 with initial instances count: 0
+2026-06-10T12:50:45.942+05:30  INFO 6972 --- [customer-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T12:50:45.943+05:30  INFO 6972 --- [customer-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781076045943, current=UP, previous=STARTING]
+2026-06-10T12:50:45.945+05:30  INFO 6972 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T12:50:45.978+05:30  INFO 6972 --- [customer-service] [main] c.msedcl.main.customer.ApplicationTests  : Started ApplicationTests in 9.868 seconds (process running for 11.928)
+2026-06-10T12:50:46.003+05:30  INFO 6972 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T12:50:46.793+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T12:50:46.794+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781076046794, current=DOWN, previous=UP]
+2026-06-10T12:50:46.796+05:30  INFO 6972 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T12:50:46.801+05:30  INFO 6972 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T12:50:46.805+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:50:46.810+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-10T12:50:46.826+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-10T12:50:46.827+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T12:50:49.828+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T12:50:49.835+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T12:50:49.836+05:30  INFO 6972 --- [customer-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T12:53:30.445+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 2424 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T12:53:30.448+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T12:53:30.519+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:53:30.520+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:53:30.521+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T12:53:30.521+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T12:53:30.524+05:30  INFO 2424 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T12:53:30.524+05:30  INFO 2424 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T12:53:31.597+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T12:53:31.758+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2026-06-10T12:53:32.059+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T12:53:32.634+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T12:53:32.651+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T12:53:32.651+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T12:53:32.722+05:30  INFO 2424 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2197 ms
+2026-06-10T12:53:33.053+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T12:53:33.444+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4eb2907a
+2026-06-10T12:53:33.447+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T12:53:33.478+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T12:53:33.537+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T12:53:34.078+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T12:53:34.194+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T12:53:35.015+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T12:53:35.027+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T12:53:35.115+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T12:53:35.367+05:30  WARN 2424 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T12:53:36.039+05:30  INFO 2424 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T12:53:36.084+05:30  WARN 2424 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T12:53:36.096+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T12:53:36.208+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T12:53:36.240+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T12:53:36.246+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T12:53:36.258+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T12:53:36.259+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T12:53:36.559+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T12:53:36.562+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T12:53:36.565+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T12:53:36.566+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781076216566 with initial instances count: 1
+2026-06-10T12:53:36.571+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T12:53:36.572+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781076216572, current=UP, previous=STARTING]
+2026-06-10T12:53:36.575+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T12:53:36.595+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T12:53:36.596+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T12:53:36.612+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 8.518 seconds (process running for 9.494)
+2026-06-10T12:53:36.624+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T12:53:37.154+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T12:53:37.155+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T12:53:37.157+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-10T12:58:36.262+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:03:03.372+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T13:03:03.373+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T13:03:03.454+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T13:03:03.456+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T13:03:36.264+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:04:35.908+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T13:04:35.908+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T13:04:35.915+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T13:04:35.915+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T13:08:36.265+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:08:52.186+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T13:08:52.186+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerId :: 3
+2026-06-10T13:08:52.191+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T13:08:52.192+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=3, name=Seema, email=seema@gmail.com, mobileNumber=0987654321)
+2026-06-10T13:13:36.266+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:18:36.268+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:23:36.270+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:28:36.273+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:33:36.275+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:38:36.277+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:43:36.278+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:48:36.279+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:53:36.281+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T13:58:36.282+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:03:36.283+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:08:36.285+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:13:36.288+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:18:36.289+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:23:36.295+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:28:36.296+05:30  INFO 2424 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:32:39.961+05:30  INFO 2424 --- [customer-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-10T14:32:39.967+05:30  INFO 2424 --- [customer-service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T14:32:39.967+05:30  INFO 2424 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082159967, current=DOWN, previous=UP]
+2026-06-10T14:32:39.967+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:32:39.971+05:30  INFO 2424 --- [customer-service] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T14:32:39.978+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:32:39.982+05:30  INFO 2424 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T14:32:39.994+05:30  INFO 2424 --- [customer-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:32:40.000+05:30  INFO 2424 --- [customer-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-10T14:32:40.004+05:30  INFO 2424 --- [customer-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-10T14:32:40.006+05:30  INFO 2424 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T14:32:43.007+05:30  INFO 2424 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T14:32:43.014+05:30  INFO 2424 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T14:32:43.015+05:30  INFO 2424 --- [customer-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T14:32:44.407+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 2424 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T14:32:44.407+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T14:32:44.411+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:32:44.411+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:32:44.411+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:32:44.411+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:32:44.918+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T14:32:44.933+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-06-10T14:32:45.113+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T14:32:45.240+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T14:32:45.242+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T14:32:45.242+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T14:32:45.287+05:30  INFO 2424 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 875 ms
+2026-06-10T14:32:45.423+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-10T14:32:45.443+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b41fb3d
+2026-06-10T14:32:45.444+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-10T14:32:45.446+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T14:32:45.509+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T14:32:45.514+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T14:32:45.607+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T14:32:45.608+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:32:45.637+05:30  WARN 2424 --- [customer-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerController': Lookup method resolution failed
+2026-06-10T14:32:45.638+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:32:45.638+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-10T14:32:45.647+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-10T14:32:45.647+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-10T14:32:45.655+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-10T14:32:45.673+05:30 ERROR 2424 --- [customer-service] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:482) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:352) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.6.jar:4.0.6]
+	at com.msedcl.main.customer.Application.main(Application.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.6.jar:4.0.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.msedcl.main.customer.controller.CustomerController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@e574d62]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-7.0.7.jar:7.0.7]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460) ~[spring-beans-7.0.7.jar:7.0.7]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: CustomerRequestDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-7.0.7.jar:7.0.7]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: CustomerRequestDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:547) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.6.jar:4.0.6]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 30 common frames omitted
+
+2026-06-10T14:33:04.440+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 2424 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T14:33:04.441+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T14:33:04.445+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:33:04.446+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:33:04.446+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:33:04.446+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:33:04.827+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T14:33:04.840+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-10T14:33:04.975+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T14:33:05.075+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T14:33:05.078+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T14:33:05.078+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T14:33:05.116+05:30  INFO 2424 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 670 ms
+2026-06-10T14:33:05.228+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-10T14:33:05.245+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6811366f
+2026-06-10T14:33:05.246+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-10T14:33:05.247+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T14:33:05.292+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T14:33:05.295+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T14:33:05.348+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T14:33:05.349+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:33:05.453+05:30  WARN 2424 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T14:33:05.756+05:30  INFO 2424 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T14:33:05.774+05:30  WARN 2424 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T14:33:05.780+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T14:33:05.830+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T14:33:05.834+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T14:33:05.834+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:33:05.834+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T14:33:05.835+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T14:33:05.855+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T14:33:05.856+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T14:33:05.856+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T14:33:05.856+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781082185856 with initial instances count: 2
+2026-06-10T14:33:05.858+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T14:33:05.858+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082185858, current=UP, previous=STARTING]
+2026-06-10T14:33:05.858+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:33:05.862+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T14:33:05.863+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T14:33:05.871+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:33:05.873+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.669 seconds (process running for 5978.755)
+2026-06-10T14:33:05.876+05:30  INFO 2424 --- [customer-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-10T14:33:13.177+05:30  INFO 2424 --- [customer-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-10T14:33:13.178+05:30  INFO 2424 --- [customer-service] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T14:33:13.178+05:30  INFO 2424 --- [customer-service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082193178, current=DOWN, previous=UP]
+2026-06-10T14:33:13.178+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:33:13.179+05:30  INFO 2424 --- [customer-service] [Thread-7] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T14:33:13.183+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:33:13.183+05:30  INFO 2424 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T14:33:13.189+05:30  INFO 2424 --- [customer-service] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:33:13.189+05:30  INFO 2424 --- [customer-service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-06-10T14:33:13.194+05:30  INFO 2424 --- [customer-service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-06-10T14:33:13.195+05:30  INFO 2424 --- [customer-service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T14:33:16.197+05:30  INFO 2424 --- [customer-service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T14:33:16.200+05:30  INFO 2424 --- [customer-service] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T14:33:16.201+05:30  INFO 2424 --- [customer-service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T14:33:17.576+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 2424 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T14:33:17.576+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T14:33:17.579+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:33:17.579+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:33:17.579+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:33:17.579+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:33:17.993+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T14:33:18.010+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-06-10T14:33:18.161+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T14:33:18.251+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T14:33:18.252+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T14:33:18.252+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T14:33:18.288+05:30  INFO 2424 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 708 ms
+2026-06-10T14:33:18.385+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-10T14:33:18.402+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@687c0b32
+2026-06-10T14:33:18.402+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-10T14:33:18.403+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T14:33:18.448+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T14:33:18.451+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T14:33:18.502+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T14:33:18.504+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:33:18.585+05:30  WARN 2424 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T14:33:18.876+05:30  INFO 2424 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T14:33:18.891+05:30  WARN 2424 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T14:33:18.893+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T14:33:18.931+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T14:33:18.933+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T14:33:18.946+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T14:33:18.947+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T14:33:18.947+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T14:33:18.947+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781082198947 with initial instances count: 2
+2026-06-10T14:33:18.949+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T14:33:18.949+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082198949, current=UP, previous=STARTING]
+2026-06-10T14:33:18.949+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:33:18.952+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T14:33:18.953+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T14:33:18.960+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:33:18.964+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.666 seconds (process running for 5991.846)
+2026-06-10T14:33:18.966+05:30  INFO 2424 --- [customer-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-10T14:36:20.550+05:30  INFO 2424 --- [customer-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-10T14:36:20.551+05:30  INFO 2424 --- [customer-service] [Thread-17] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T14:36:20.551+05:30  INFO 2424 --- [customer-service] [Thread-17] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082380551, current=DOWN, previous=UP]
+2026-06-10T14:36:20.553+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:36:20.553+05:30  INFO 2424 --- [customer-service] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T14:36:20.555+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:36:20.557+05:30  INFO 2424 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T14:36:20.564+05:30  INFO 2424 --- [customer-service] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:36:20.565+05:30  INFO 2424 --- [customer-service] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-06-10T14:36:20.569+05:30  INFO 2424 --- [customer-service] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-06-10T14:36:20.570+05:30  INFO 2424 --- [customer-service] [Thread-17] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T14:36:23.572+05:30  INFO 2424 --- [customer-service] [Thread-17] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T14:36:23.576+05:30  INFO 2424 --- [customer-service] [Thread-17] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T14:36:23.576+05:30  INFO 2424 --- [customer-service] [Thread-17] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T14:36:24.955+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 2424 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T14:36:24.955+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T14:36:24.959+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:36:24.959+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:36:24.960+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:36:24.960+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:36:25.415+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T14:36:25.432+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-06-10T14:36:25.613+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T14:36:25.728+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T14:36:25.731+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T14:36:25.732+05:30  INFO 2424 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T14:36:25.768+05:30  INFO 2424 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 808 ms
+2026-06-10T14:36:25.884+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-06-10T14:36:25.905+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cd79cf8
+2026-06-10T14:36:25.906+05:30  INFO 2424 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-06-10T14:36:25.907+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T14:36:25.957+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T14:36:25.961+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T14:36:26.014+05:30  INFO 2424 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T14:36:26.016+05:30  INFO 2424 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:36:26.108+05:30  WARN 2424 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T14:36:26.407+05:30  INFO 2424 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T14:36:26.426+05:30  WARN 2424 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T14:36:26.430+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T14:36:26.475+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T14:36:26.478+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T14:36:26.479+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T14:36:26.501+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T14:36:26.501+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T14:36:26.501+05:30  INFO 2424 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T14:36:26.502+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781082386501 with initial instances count: 3
+2026-06-10T14:36:26.503+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T14:36:26.503+05:30  INFO 2424 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082386503, current=UP, previous=STARTING]
+2026-06-10T14:36:26.504+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:36:26.507+05:30  INFO 2424 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T14:36:26.507+05:30  INFO 2424 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T14:36:26.515+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:36:26.516+05:30  INFO 2424 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 2.863 seconds (process running for 6179.397)
+2026-06-10T14:36:26.518+05:30  INFO 2424 --- [customer-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-10T14:37:31.057+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T14:37:31.057+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T14:37:31.059+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-10T14:37:31.070+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T14:37:31.071+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T14:37:31.079+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T14:37:31.080+05:30  INFO 2424 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T14:38:43.624+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-10T14:38:43.626+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T14:38:43.626+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781082523626, current=DOWN, previous=UP]
+2026-06-10T14:38:43.627+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:38:43.628+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T14:38:43.632+05:30  INFO 2424 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T14:38:43.632+05:30  INFO 2424 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:38:43.637+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:38:43.638+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-06-10T14:38:43.643+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-06-10T14:38:43.644+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T14:38:46.645+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T14:38:46.649+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T14:38:46.649+05:30  INFO 2424 --- [customer-service] [RMI TCP Connection(121)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T14:49:35.486+05:30  INFO 15388 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Starting Application using Java 25.0.1 with PID 15388 (C:\Training\Spring Boot Microservices\02_CustomerService\target\classes started by student16 in C:\Training\Spring Boot Microservices\02_CustomerService)
+2026-06-10T14:49:35.489+05:30  INFO 15388 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : The following 1 profile is active: "uat"
+2026-06-10T14:49:35.557+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:49:35.558+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[default], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:49:35.559+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8383
+2026-06-10T14:49:35.559+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customer-service, profiles=[uat], label=null, version=7f4e7cf39f7c0616034998f5aaf484d8e6fdd961, state=
+2026-06-10T14:49:35.561+05:30  INFO 15388 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T14:49:35.562+05:30  INFO 15388 --- [customer-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T14:49:36.648+05:30  INFO 15388 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T14:49:36.813+05:30  INFO 15388 --- [customer-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2026-06-10T14:49:37.129+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39fe8766-19a5-3dc5-a348-331975b25e99
+2026-06-10T14:49:37.697+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T14:49:37.712+05:30  INFO 15388 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T14:49:37.712+05:30  INFO 15388 --- [customer-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T14:49:37.777+05:30  INFO 15388 --- [customer-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2214 ms
+2026-06-10T14:49:38.143+05:30  INFO 15388 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T14:49:38.533+05:30  INFO 15388 --- [customer-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53836e1a
+2026-06-10T14:49:38.536+05:30  INFO 15388 --- [customer-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T14:49:38.571+05:30  INFO 15388 --- [customer-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T14:49:38.633+05:30  INFO 15388 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T14:49:39.183+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T14:49:39.306+05:30  INFO 15388 --- [customer-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/customer_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: customer_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T14:49:40.211+05:30  INFO 15388 --- [customer-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T14:49:40.220+05:30  INFO 15388 --- [customer-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T14:49:40.312+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T14:49:40.564+05:30  WARN 15388 --- [customer-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T14:49:41.300+05:30  INFO 15388 --- [customer-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T14:49:41.349+05:30  WARN 15388 --- [customer-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T14:49:41.362+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-06-10T14:49:41.481+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T14:49:41.513+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T14:49:41.518+05:30  INFO 15388 --- [customer-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T14:49:41.529+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T14:49:41.530+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T14:49:41.835+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T14:49:41.837+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T14:49:41.840+05:30  INFO 15388 --- [customer-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T14:49:41.842+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781083181841 with initial instances count: 1
+2026-06-10T14:49:41.846+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2026-06-10T14:49:41.848+05:30  INFO 15388 --- [customer-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781083181848, current=UP, previous=STARTING]
+2026-06-10T14:49:41.850+05:30  INFO 15388 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T14:49:41.871+05:30  INFO 15388 --- [customer-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T14:49:41.872+05:30  INFO 15388 --- [customer-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T14:49:41.887+05:30  INFO 15388 --- [customer-service] [restartedMain] com.msedcl.main.customer.Application     : Started Application in 9.32 seconds (process running for 10.97)
+2026-06-10T14:49:41.898+05:30  INFO 15388 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T14:49:42.498+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T14:49:42.499+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T14:49:42.501+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-10T14:54:41.533+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T14:59:41.535+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:02:13.746+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T15:02:13.747+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T15:02:13.838+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T15:02:13.839+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-1] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T15:02:35.963+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T15:02:35.963+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerId :: 3
+2026-06-10T15:02:35.970+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T15:02:35.970+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-2] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=3, name=Seema, email=seema@gmail.com, mobileNumber=0987654321)
+2026-06-10T15:02:51.476+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T15:02:51.476+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T15:02:51.481+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T15:02:51.481+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-3] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T15:02:51.638+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T15:02:51.638+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T15:02:51.642+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T15:02:51.642+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-4] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T15:03:07.044+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Request received to retrive customer details
+2026-06-10T15:03:07.045+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerId :: 1
+2026-06-10T15:03:07.049+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : Customer details retrived successfully
+2026-06-10T15:03:07.050+05:30  INFO 15388 --- [customer-service] [http-nio-8080-exec-5] c.m.m.c.controller.CustomerController    : CustomerResponseDTO(customerId=1, name=Reema, email=reema@gmail.com, mobileNumber=1234567890)
+2026-06-10T15:04:41.536+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:09:41.538+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:14:41.540+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:19:41.541+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:24:41.542+05:30  INFO 15388 --- [customer-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T15:28:06.160+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-10T15:28:06.162+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2026-06-10T15:28:06.162+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781085486162, current=DOWN, previous=UP]
+2026-06-10T15:28:06.162+05:30  INFO 15388 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service: registering service...
+2026-06-10T15:28:06.166+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T15:28:06.173+05:30  INFO 15388 --- [customer-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T15:28:06.174+05:30  INFO 15388 --- [customer-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - registration status: 204
+2026-06-10T15:28:06.184+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T15:28:06.189+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-10T15:28:06.194+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-10T15:28:06.195+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T15:28:09.197+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T15:28:09.204+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/host.docker.internal:customer-service - deregister  status: 200
+2026-06-10T15:28:09.205+05:30  INFO 15388 --- [customer-service] [RMI TCP Connection(49)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
