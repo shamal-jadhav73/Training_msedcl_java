@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "employee-service"
+#this dependancy we added to enable circuit breaker
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+#following dependancy to add actuator(enable actuator endpoints])
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+    port: 8282
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8070/eureka/
+#Default Circuit breaker configuration
+resilience4j:
+  circuitbreaker:
+    configs:
+       default:
+          sliding-window-size: 10 #circuit breaker will consider last 10 calls to calculate failure rate
+          permitted-number-of-calls-in-half-open-state: 2 #number of test calls allowed in half-open state
+          failure-rate-threshold: 50 #If failure %>=50 %,circuit will open
+          wait-duration-in-open-state: 1000 # How long circuit breaker stays open before trying again
+         
