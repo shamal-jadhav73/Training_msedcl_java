@@ -1,0 +1,57 @@
+For Circuit breaker , we added dependancy resilience 4j in pom.xml
+
+1}added some properties in application.yaml of employeeService 
+
+2} #Default Circuit breaker configuration
+
+  #this dependancy we added to enable circuit breaker
+    cloud:
+        openfeign:
+            circuitbreaker:
+                enabled: true
+
+
+resilience4j:
+  circuitbreaker:
+    configs:
+       default:
+          sliding-window-size: 10 #circuit breaker will consider last 10 calls to calculate failure rate
+          permitted-number-of-calls-in-half-open-state: 2 #number of test calls allowed in half-open state
+          failure-rate-threshold: 50 #If failure %>=50 %,circuit will open
+          wait-duration-in-open-state: 1000 # How long circuit breaker stays open before trying again
+
+3}Also created class using interface feignclient
+
+package com.msedcl.main.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.msedcl.main.dto.DepartmentDTO;
+
+@FeignClient(name="department-service",path="/departmentapi",fallback = DepartmentFallBack.class)
+public interface DepartmentFeignClient {
+	
+	@GetMapping("department")
+	public ResponseEntity<DepartmentDTO> getDepartment(@RequestParam int departmentId);
+
+}
+
+
+
+
+
+4} TO test we kept all services running and observed actuator with URL 
+http://localhost:8282/actuator
+http://localhost:8282/actuator/circuitbreakers
+http://localhost:8282/actuator/circuitbreakerevents
+
+5}SENT SOME REQUEST THROUGH POSTMAN-> FOR SUCCESS IT SHOWED SUCCESS AND circuilt breaker remained closed
+
+6} After 3 request, we stopped department service and tried sending postman request(post->add employee) 
+request failed and still circuilt breaker remain closed as it observes last 10 request, after 10th failed request, circuit breaker
+status changed to open
+
+         
