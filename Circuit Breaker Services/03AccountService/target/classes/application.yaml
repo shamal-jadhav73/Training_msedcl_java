@@ -1,0 +1,73 @@
+spring:
+    application:
+        name: "account-service"
+
+    #this dependancy we added to enable circuit breaker
+    cloud:
+        openfeign:
+            circuitbreaker:
+                enabled: true
+    datasource:
+        username: root
+        password: root123
+        url: jdbc:mysql://localhost:3306/accounts_db
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    config:
+        import: "configserver:http://localhost:8383"
+    profiles:
+        active:
+            - prod
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+server:
+    port: 8181
+
+springdoc:
+    api-docs:
+        enabled: false
+logging:
+    file:
+        name: logs/account.log
+
+#following code is for registration of cutomer service to eureka client
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8070/eureka
+
+build:
+    version: "2.0"
+customer:
+    message: "Welcome to Msedcl bank Account related REST API"
+    contactDetails:
+        name: "Shailesh"
+        email: "shailesh@msedcl.in"
+    onCallSupport:
+        - 1234568789
+        - 9876543210
+
+#Default Circuit breaker configuration
+resilience4j:
+    circuitbreaker:
+        configs:
+            default:
+                sliding-window-size: 10 #circuit breaker will consider last 10 calls to calculate failure rate
+                permitted-number-of-calls-in-half-open-state: 2 #number of test calls allowed in half-open state
+                failure-rate-threshold: 50 #If failure %>=50 %,circuit will open
+                wait-duration-in-open-state: 1000 # How long circuit breaker stays open before trying again
+#spring.application.name=03AccountService
+#spring.datasource.username=root
+#spring.datasource.password=root123
+#spring.datasource.url=jdbc:mysql://localhost:3306/accounts_db
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#server.port=8181
+#logging.file.name=logs/account.log
