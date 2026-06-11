@@ -1,0 +1,80 @@
+2026-06-11T09:29:18.176+05:30  INFO 9880 --- [department-service] [restartedMain] com.msedcl.main.Application              : Starting Application using Java 25.0.1 with PID 9880 (C:\Training\FeignAssignment\01_DepartmentService\target\classes started by student16 in C:\Training\FeignAssignment\01_DepartmentService)
+2026-06-11T09:29:18.183+05:30  INFO 9880 --- [department-service] [restartedMain] com.msedcl.main.Application              : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T09:29:18.251+05:30  INFO 9880 --- [department-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T09:29:18.252+05:30  INFO 9880 --- [department-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T09:29:19.086+05:30  INFO 9880 --- [department-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8a5e4931-5516-357e-bc76-886bc46a81bb
+2026-06-11T09:29:19.463+05:30  INFO 9880 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-11T09:29:19.480+05:30  INFO 9880 --- [department-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T09:29:19.481+05:30  INFO 9880 --- [department-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T09:29:19.539+05:30  INFO 9880 --- [department-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1286 ms
+2026-06-11T09:29:20.258+05:30  INFO 9880 --- [department-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-11T09:29:20.309+05:30  WARN 9880 --- [department-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-11T09:29:20.368+05:30  INFO 9880 --- [department-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-11T09:29:20.396+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-11T09:29:20.401+05:30  INFO 9880 --- [department-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-11T09:29:20.411+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-11T09:29:20.412+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-11T09:29:20.412+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-11T09:29:20.412+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-11T09:29:20.412+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-11T09:29:20.413+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-11T09:29:20.413+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-11T09:29:20.931+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-11T09:29:20.932+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-11T09:29:20.934+05:30  INFO 9880 --- [department-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-11T09:29:20.937+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781150360936 with initial instances count: 0
+2026-06-11T09:29:20.941+05:30  INFO 9880 --- [department-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2026-06-11T09:29:20.942+05:30  INFO 9880 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781150360942, current=UP, previous=STARTING]
+2026-06-11T09:29:20.944+05:30  INFO 9880 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-11T09:29:20.963+05:30  INFO 9880 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-11T09:29:20.965+05:30  INFO 9880 --- [department-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-11T09:29:20.975+05:30  INFO 9880 --- [department-service] [restartedMain] com.msedcl.main.Application              : Started Application in 3.317 seconds (process running for 4.305)
+2026-06-11T09:29:21.098+05:30  INFO 9880 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-11T09:29:50.933+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-11T09:29:50.934+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-11T09:29:50.960+05:30  INFO 9880 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-11T09:31:35.328+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T09:31:35.328+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T09:31:35.331+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-06-11T09:31:35.446+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] c.m.m.controller.DepartmentController    : Request received to add new department
+2026-06-11T09:31:35.447+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] c.m.m.controller.DepartmentController    : Department(departmentId=1, departmentName=Computer)
+2026-06-11T09:31:35.447+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] c.m.m.controller.DepartmentController    : New department added successfully
+2026-06-11T09:31:35.448+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-2] c.m.m.controller.DepartmentController    : [Department(departmentId=1, departmentName=Computer)]
+2026-06-11T09:31:48.721+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-3] c.m.m.controller.DepartmentController    : Request received to add new department
+2026-06-11T09:31:48.721+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-3] c.m.m.controller.DepartmentController    : Department(departmentId=2, departmentName=Electrical)
+2026-06-11T09:31:48.722+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-3] c.m.m.controller.DepartmentController    : New department added successfully
+2026-06-11T09:31:48.722+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-3] c.m.m.controller.DepartmentController    : [Department(departmentId=1, departmentName=Computer), Department(departmentId=2, departmentName=Electrical)]
+2026-06-11T09:32:07.855+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-4] c.m.m.controller.DepartmentController    : Request received to add new department
+2026-06-11T09:32:07.855+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-4] c.m.m.controller.DepartmentController    : Department(departmentId=3, departmentName=Mechanical)
+2026-06-11T09:32:07.855+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-4] c.m.m.controller.DepartmentController    : New department added successfully
+2026-06-11T09:32:07.855+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-4] c.m.m.controller.DepartmentController    : [Department(departmentId=1, departmentName=Computer), Department(departmentId=2, departmentName=Electrical), Department(departmentId=3, departmentName=Mechanical)]
+2026-06-11T09:32:30.542+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-5] c.m.m.controller.DepartmentController    : Request received to retrive customer details
+2026-06-11T09:32:30.543+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-5] c.m.m.controller.DepartmentController    : CustomerId :: 2
+2026-06-11T09:32:30.543+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-5] c.m.m.controller.DepartmentController    : Department details retrived successfully
+2026-06-11T09:32:30.543+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-5] c.m.m.controller.DepartmentController    : Department(departmentId=2, departmentName=Electrical)
+2026-06-11T09:33:36.444+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-7] c.m.m.controller.DepartmentController    : Request received to retrive customer details
+2026-06-11T09:33:36.444+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-7] c.m.m.controller.DepartmentController    : CustomerId :: 2
+2026-06-11T09:33:36.444+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-7] c.m.m.controller.DepartmentController    : Department details retrived successfully
+2026-06-11T09:33:36.444+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-7] c.m.m.controller.DepartmentController    : Department(departmentId=2, departmentName=Electrical)
+2026-06-11T09:33:49.800+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-8] c.m.m.controller.DepartmentController    : Request received to retrive customer details
+2026-06-11T09:33:49.800+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-8] c.m.m.controller.DepartmentController    : CustomerId :: 2
+2026-06-11T09:33:49.800+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-8] c.m.m.controller.DepartmentController    : Department details retrived successfully
+2026-06-11T09:33:49.800+05:30  INFO 9880 --- [department-service] [http-nio-8080-exec-8] c.m.m.controller.DepartmentController    : Department(departmentId=2, departmentName=Electrical)
+2026-06-11T09:34:20.416+05:30  INFO 9880 --- [department-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-11T09:39:20.417+05:30  INFO 9880 --- [department-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-11T09:42:02.462+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-06-11T09:42:02.463+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DEPARTMENT-SERVICE with eureka with status DOWN
+2026-06-11T09:42:02.463+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781151122463, current=DOWN, previous=UP]
+2026-06-11T09:42:02.465+05:30  INFO 9880 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-11T09:42:02.467+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T09:42:02.478+05:30  INFO 9880 --- [department-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T09:42:02.480+05:30  INFO 9880 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-11T09:42:02.484+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-11T09:42:05.487+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-11T09:42:05.496+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - deregister  status: 200
+2026-06-11T09:42:05.496+05:30  INFO 9880 --- [department-service] [RMI TCP Connection(22)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

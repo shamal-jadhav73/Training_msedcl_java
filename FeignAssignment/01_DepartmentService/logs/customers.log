@@ -1,0 +1,91 @@
+2026-06-10T17:24:19.892+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : Starting Application using Java 25.0.1 with PID 15668 (C:\Training\FeignAssignment\01_DepartmentService\target\classes started by student16 in C:\Training\FeignAssignment\01_DepartmentService)
+2026-06-10T17:24:19.893+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : The following 1 profile is active: "uat"
+2026-06-10T17:24:20.077+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8a5e4931-5516-357e-bc76-886bc46a81bb
+2026-06-10T17:24:20.117+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T17:24:20.118+05:30  INFO 15668 --- [department-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T17:24:20.118+05:30  INFO 15668 --- [department-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T17:24:20.141+05:30  INFO 15668 --- [department-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 246 ms
+2026-06-10T17:24:20.240+05:30  INFO 15668 --- [department-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T17:24:20.247+05:30  WARN 15668 --- [department-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T17:24:20.259+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T17:24:20.261+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T17:24:20.262+05:30  INFO 15668 --- [department-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T17:24:20.262+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T17:24:20.263+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T17:24:20.466+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T17:24:20.467+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T17:24:20.467+05:30  INFO 15668 --- [department-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T17:24:20.467+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781092460467 with initial instances count: 0
+2026-06-10T17:24:20.468+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2026-06-10T17:24:20.468+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781092460468, current=UP, previous=STARTING]
+2026-06-10T17:24:20.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-10T17:24:20.471+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T17:24:20.473+05:30  INFO 15668 --- [department-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T17:24:20.481+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : Started Application in 0.658 seconds (process running for 5055.644)
+2026-06-10T17:24:20.560+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-06-10T17:24:50.468+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T17:24:50.492+05:30  INFO 15668 --- [department-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T17:25:15.783+05:30  INFO 15668 --- [department-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-10T17:25:15.784+05:30  INFO 15668 --- [department-service] [Thread-37] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DEPARTMENT-SERVICE with eureka with status DOWN
+2026-06-10T17:25:15.784+05:30  INFO 15668 --- [department-service] [Thread-37] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781092515784, current=DOWN, previous=UP]
+2026-06-10T17:25:15.785+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-10T17:25:15.785+05:30  INFO 15668 --- [department-service] [Thread-37] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T17:25:15.788+05:30  INFO 15668 --- [department-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T17:25:15.791+05:30  INFO 15668 --- [department-service] [Thread-37] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T17:25:15.793+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-10T17:25:15.793+05:30  INFO 15668 --- [department-service] [Thread-37] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T17:25:15.799+05:30  INFO 15668 --- [department-service] [Thread-37] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - deregister  status: 200
+2026-06-10T17:25:15.800+05:30  INFO 15668 --- [department-service] [Thread-37] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-10T17:25:15.892+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : Starting Application using Java 25.0.1 with PID 15668 (C:\Training\FeignAssignment\01_DepartmentService\target\classes started by student16 in C:\Training\FeignAssignment\01_DepartmentService)
+2026-06-10T17:25:15.893+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : No active profile set, falling back to 1 default profile: "default"
+2026-06-10T17:25:16.093+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8a5e4931-5516-357e-bc76-886bc46a81bb
+2026-06-10T17:25:16.132+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-10T17:25:16.132+05:30  INFO 15668 --- [department-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T17:25:16.133+05:30  INFO 15668 --- [department-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T17:25:16.156+05:30  INFO 15668 --- [department-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 262 ms
+2026-06-10T17:25:16.260+05:30  INFO 15668 --- [department-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-10T17:25:16.268+05:30  WARN 15668 --- [department-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-10T17:25:16.281+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-10T17:25:16.283+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-10T17:25:16.283+05:30  INFO 15668 --- [department-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-10T17:25:16.283+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-10T17:25:16.283+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-10T17:25:16.284+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-10T17:25:16.285+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-10T17:25:16.285+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-10T17:25:16.285+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-10T17:25:16.285+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-10T17:25:16.298+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-10T17:25:16.298+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-10T17:25:16.298+05:30  INFO 15668 --- [department-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-10T17:25:16.299+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781092516298 with initial instances count: 1
+2026-06-10T17:25:16.299+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DEPARTMENT-SERVICE with eureka with status UP
+2026-06-10T17:25:16.299+05:30  INFO 15668 --- [department-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781092516299, current=UP, previous=STARTING]
+2026-06-10T17:25:16.299+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-10T17:25:16.302+05:30  INFO 15668 --- [department-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-10T17:25:16.303+05:30  INFO 15668 --- [department-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-06-10T17:25:16.309+05:30  INFO 15668 --- [department-service] [restartedMain] com.msedcl.main.Application              : Started Application in 0.453 seconds (process running for 5111.471)
+2026-06-10T17:25:16.311+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-10T17:25:16.311+05:30  INFO 15668 --- [department-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-10T17:25:49.748+05:30  INFO 15668 --- [department-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-10T17:25:49.749+05:30  INFO 15668 --- [department-service] [Thread-43] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DEPARTMENT-SERVICE with eureka with status DOWN
+2026-06-10T17:25:49.749+05:30  INFO 15668 --- [department-service] [Thread-43] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781092549749, current=DOWN, previous=UP]
+2026-06-10T17:25:49.749+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service: registering service...
+2026-06-10T17:25:49.750+05:30  INFO 15668 --- [department-service] [Thread-43] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-10T17:25:49.753+05:30  INFO 15668 --- [department-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-10T17:25:49.755+05:30  INFO 15668 --- [department-service] [Thread-43] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-10T17:25:49.763+05:30  INFO 15668 --- [department-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - registration status: 204
+2026-06-10T17:25:49.763+05:30  INFO 15668 --- [department-service] [Thread-43] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-10T17:25:49.767+05:30  INFO 15668 --- [department-service] [Thread-43] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:department-service - deregister  status: 200
+2026-06-10T17:25:49.767+05:30  INFO 15668 --- [department-service] [Thread-43] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
