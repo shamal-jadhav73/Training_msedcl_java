@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: "department-service"
+server:
+    port: 8181
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8070/eureka/
+
