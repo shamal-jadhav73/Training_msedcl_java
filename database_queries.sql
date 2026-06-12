@@ -201,8 +201,11 @@ CREATE TABLE DEPARTMENT_DETAILS
                                                      updated_at datetime);
      
   
-  SELECT * FROM ACCOUNT_DETAILS;
+ select * from account_details;
+ 
+ truncate table account_details;
   
+  commit;
   create database transactions_db;
   
   use transactions_db;
@@ -222,4 +225,21 @@ CREATE TABLE DEPARTMENT_DETAILS
 													updated_by varchar(15),
                                                      updated_at datetime);
                                                      
-                                                     select * from transactions_details;account_details
+                                                     select * from transactions_details;
+	
+    create database user_db;
+    use user_db;
+    
+    create table user_details
+    (
+      user_id int primary key auto_increment,
+      user_name varchar(50),
+      password varchar(50),
+      role varchar(50)
+    );
+    
+    
+    insert into user_details(user_name,password,role) values('Seema','Seema@123','ADMIN');
+    insert into user_details(user_name,password,role) values('Reema','Reema@123','USER');
+    
+    SELECT * FROM USER_DETAILS;
