@@ -1,0 +1,23 @@
+spring:
+    application:
+        name: "authentication-service"
+    datasource:
+        url: jdbc:mysql://localhost:3306/user_db
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: root123
+#above code for database connection(login_details) and below was to mention id password manually
+#     user:
+#       name: admin
+#       password: Msedcl@2026
+server:
+    port: 8383
+
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8070/eureka/
