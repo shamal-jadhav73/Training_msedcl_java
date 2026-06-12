@@ -1,0 +1,22 @@
+Aspect = class that contains cross cutting concerns
+        1. Advice = Action that should run at a specific time
+                   @Before
+                   @After
+                   @Around
+        2.PointCut= Defines where Advice should apply
+                    Example
+                    execution(* com.msedcl.main.service *.*(..))
+
+                  1) *=(return type(all here so written *)
+                  2)(package name) (* in case of entire application)
+                  3)*=class
+                  4)*=method
+                  5)(..)=Any number of parameters
+        3.JointPoint = Actual method execution point and it gives runtime information like
+                        a. method name
+                        b.argumemts
+                        c. arguments values
+
+
+
+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
